@@ -1,0 +1,104 @@
+/*frutas index style sheet*/
+/*main page only*/
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(135deg, #251535, #201030, #150525, #100020,#050015);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-size: 500%;
+    animation: animatedbg 5s infinite;
+}
+
+@keyframes animatedbg{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+@media (max-width: 800px){
+    header {
+        flex-direction: column;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #150525;
+    align-items: center;
+    min-height: 80px;
+}
+/*HEADER-NAV*/
+.nav-logo {
+    display: flex;
+}
+
+.nav-logo .logo{
+    padding-left: 15px;
+}
+
+.sub-logo {
+    text-align: center;
+}
+
+.frutas-index {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    height: 100px;
+    display: flex;
+}
+/*      /HEADER-NAV*/
+/*TEXT-STYLES*/
+.sub-logo {
+    font-size: 30px;
+    color: #CC66CC;
+    text-align: center;
+}
+
+.sub {
+    color: #BBAABB;
+    font-size: 25px;
+    padding-left: 25vw;
+    padding-right: 25vw;
+}
+
+.introtext {
+    color: #BBAABB;
+    text-align: justify;
+    padding-left: 25vw;
+    padding-right: 25vw;
+    font-size: 18px;
+}
+
+.linkdes {
+    color: #DDBBDD;
+    text-decoration: none;
+}
+
+.linkdes:hover {
+    color: #100520;
+}
+
+.nav-link{
+    font-size: 20px;
+    color: #DDBBDD;
+    text-decoration: none;
+    padding-right: 15px;
+}
+
+.nav-link:hover {
+    color: #100520;
+}
